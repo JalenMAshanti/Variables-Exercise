@@ -12,7 +12,31 @@
                 dogName = "Duke";           
             }
 
-            int dogAge = 4;
+            bool isDogAgeValid = false;
+            int dogAge = 90;
+
+            while (isDogAgeValid == false) { 
+            
+
+             
+                Console.WriteLine("Enter Dog Age: ");
+            
+                try
+                {
+                   dogAge = Convert.ToInt32(Console.ReadLine());
+                   isDogAgeValid = true;
+                }
+                catch
+                {
+
+                    Console.WriteLine("Invalid dog age please try again ");
+                    isDogAgeValid = false;
+                }
+                
+            }
+           
+
+
             char dogMiddleInitial = 'A';
             bool isDogHappy = true;
             double poundsOfFood = 22.7;
